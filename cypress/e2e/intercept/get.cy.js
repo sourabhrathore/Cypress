@@ -28,7 +28,7 @@ describe("Get api and intercept",()=>{
         })
     })
 
-    it.only('Mock get responce using fixture',()=>{
+    it('Mock get responce using fixture',()=>{
         cy.intercept('GET', '/api/v1/Activities',{
             statusCode: 200,
             fixture: 'example.json'
